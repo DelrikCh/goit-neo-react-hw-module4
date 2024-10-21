@@ -1,0 +1,25 @@
+.imageGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  margin: 20px;
+}
+
+.imageItem {
+  list-style-type: none;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 75%;
+}
+
+.imageItem img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
